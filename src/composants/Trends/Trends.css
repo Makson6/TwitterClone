@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.trend {
+    font-family: 'Inter', sans-serif;
+}
+
+.trendSearch{
+    display: flex;
+    background-color: rgb(35, 34, 34);
+    margin: 1rem;
+    height: 25px;
+    border-radius: 25px;
+}
+.trandsdiv{
+    display: flex;
+    background-color: rgb(35, 34, 34);
+    margin: 1rem;
+    /* height: 25px; */
+    border-radius: 12px;
+}
+.trendSearch > input {
+   border: none;
+   outline: none;
+   background:none;
+}
+.trendSearch > img {
+    border: none;
+}

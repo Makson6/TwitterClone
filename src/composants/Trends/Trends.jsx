@@ -1,17 +1,20 @@
+import Search from "../../assets/Icons/Others/Search.svg"
+import "./Trends.css"
 function Trends (){
 
 return (
-    <>
-    <div>
-        <input type="text" />
+    <div className="trend">
+    <div className="trendSearch">
+        <img src={Search} alt="" srcset="" />
+        <input type="text" placeholder="Search" />
     </div>
-    <div>
+    <div className="trandsdiv">
         <p>deuxime</p>
     </div>
-    <div>
+    <div className="trandsdiv">
         <p>troisieme</p>
     </div>
-    </>
+    </div>
 )
 }
 
