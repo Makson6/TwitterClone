@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
-.trend {
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.trends {
     font-family: 'Inter', sans-serif;
+    border-right: 1px solid #2F3336 ;
+    padding-left: 0.9rem;
+    width: 16rem;
 }
 
 .trendSearch{
     display: flex;
     background-color: rgb(35, 34, 34);
-    margin: 1rem;
+    margin: 4%;
     height: 25px;
     border-radius: 25px;
-}
-.trandsdiv{
-    display: flex;
-    background-color: rgb(35, 34, 34);
-    margin: 1rem;
-    /* height: 25px; */
-    border-radius: 12px;
 }
 .trendSearch > input {
    border: none;
@@ -25,4 +25,44 @@
 }
 .trendSearch > img {
     border: none;
+}
+.trend{
+    display: flex;
+    background-color: rgb(35, 34, 34);
+    margin: 4%;
+    border-radius: 7px;
+    justify-content: space-between;
+    padding-left: 0.6rem;
+    padding-right: 0.4rem;
+    width: 88.1%;
+}
+
+.trendscontent{
+    align-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 0%;
+    padding: 0;
+}
+
+.trendscontent >.detail{
+    color: #666768;
+}
+.trendscontent >.author{
+    font-weight: bold;
+    color: rgb(215, 222, 227);
+}
+.trend > .lop{
+    margin-top: 7rem;
+}
+.trendscontent >span{
+    font-size: medium;
+    font-weight: 600;
+    color: rgb(70, 70, 207);
+}
+.grdtitre{
+    display: flex;
+    justify-content: space-between;
+}
+h4{
+    padding-right: 3.6px;
 }
