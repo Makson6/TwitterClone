@@ -43,9 +43,11 @@
     display: flex;
     justify-content: space-between;
 }
-.author-detail{
+.author>.author-detail{
     color: #666768;
+    /* padding-left: 45px; */
 }
+
 .author-name{
     font-weight: bold;
     display: flex;

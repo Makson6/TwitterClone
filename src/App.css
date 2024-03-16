@@ -226,7 +226,9 @@ body {
         filter: invert(20%) sepia(100%) saturate(9000%) hue-rotate(1deg) brightness(209%) contrast(210%);
 }
 
-
+.not-found{
+    align-items: center;
+}
 
 .tweet-title-author:hover {
     cursor: pointer;
