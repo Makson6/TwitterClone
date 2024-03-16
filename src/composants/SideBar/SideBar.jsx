@@ -94,10 +94,13 @@ export default function SideBar() {
             <div className="user-footer">
                 <img src={ProfilePhoto} alt="" />
                 <div className="footer-content">
-                    BradleyOrtiz<img src={Private} alt=""/>
-                    <img src={More2} alt="" srcset="" />
-                    <p>@Bradley_</p>
+                    <div className="footer-cont">
+                        BradleyOrtiz
+                    <img src={Private}/>
+                        </div>
+                   <p className="tweet-title-details"> @Bradley_</p>
                 </div>
+                    <img className="img" src={More2} alt="" srcset="" />
             </div>
 
         </div>

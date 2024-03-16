@@ -1,68 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+
 .trends {
     font-family: 'Inter', sans-serif;
     border-right: 1px solid #2F3336 ;
-    padding-left: 0.9rem;
-    width: 16rem;
+    width: 19rem;
 }
 
-.trendSearch{
+.trends>#search-bar{
     display: flex;
     background-color: rgb(35, 34, 34);
     margin: 4%;
     height: 25px;
     border-radius: 25px;
 }
-.trendSearch > input {
+.trends>#search-bar > input {
    border: none;
    outline: none;
    background:none;
 }
-.trendSearch > img {
+.trends>#search-bar > img {
     border: none;
 }
 .trend{
-    display: flex;
     background-color: rgb(35, 34, 34);
     margin: 4%;
     border-radius: 7px;
-    justify-content: space-between;
     padding-left: 0.6rem;
     padding-right: 0.4rem;
     width: 88.1%;
+    display: inline-block;
+    align-items: center;
+}
+.trend>.p{
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 13px;
+    color: rgb(77, 77, 241);
+    
 }
 
-.trendscontent{
-    align-content: space-between;
-    justify-content: space-between;
-    margin-bottom: 0%;
-    padding: 0;
-}
-
-.trendscontent >.detail{
-    color: #666768;
-}
-.trendscontent >.author{
-    font-weight: bold;
-    color: rgb(215, 222, 227);
-}
-.trend > .lop{
-    margin-top: 7rem;
-}
-.trendscontent >span{
-    font-size: medium;
-    font-weight: 600;
-    color: rgb(70, 70, 207);
-}
-.grdtitre{
+.titre{
     display: flex;
     justify-content: space-between;
 }
-h4{
-    padding-right: 3.6px;
+.author-detail{
+    color: #666768;
+}
+.author-name{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.trend-author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.trend-content>p{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+div>.trend-avatar{
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 100%;
+    margin: 5px;
+}
+.author-name{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.trend>.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend-content{
+    margin-bottom: 18px;
+}
+.content>button{
+    background-color: rgb(223, 212, 212)(216, 210, 210)(216, 210, 210)(138, 127, 127);
+    border: none;
+    border-radius: 19px;
+    height: 1.7rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 1.7rem;
+    
+}
+
+button{
+    cursor: pointer;
+}
+.p{
+    margin: 0;
+    margin-bottom: 12px;
+    color: rgb(77, 77, 241);
+    cursor: pointer;
+}
+
+/* Actions hover */
+
+.author-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }

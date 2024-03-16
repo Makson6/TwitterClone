@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 *{
     text-decoration: none;
+    cursor: inherit;
 }
 .sidebar {
     font-family: 'Inter', sans-serif;
@@ -25,7 +26,6 @@
 
 .buttonS{
     margin-top: 1.6rem;
-    /* margin-right: 0.2rem; */
     text-transform: capitalize;
     padding: .4rem;
     border: none;
@@ -37,9 +37,27 @@
 }
 .user-footer{
     display: flex;
-    padding-top: 60%;
+    padding-top: 17rem;
+    justify-content: space-between;
+}
+.user-footer>.img{
+    padding-left: 3rem;
+}
+.footer-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.footer-content>p{
+    margin: 0;
 }
 
-.footer-content{
-    display: flex;
+/* Effets hover */
+
+.side-nav>h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
