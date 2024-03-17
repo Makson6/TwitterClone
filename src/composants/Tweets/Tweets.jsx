@@ -1,5 +1,5 @@
 import Tweet from './Tweet';
-import {data}  from '../Data/Data/';
+import {data}  from '../../Data/Data';
 
 export default function Tweets (){
     

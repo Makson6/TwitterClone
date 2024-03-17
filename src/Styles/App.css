@@ -234,3 +234,15 @@ body {
     cursor: pointer;
     text-decoration: underline;
 }
+
+
+.not-found{
+    margin-left:43rem;
+    margin-top: 14%;
+}
+.not-found-text{
+    margin-left: 45rem;
+    }
+h2.not-found-text{
+    margin-left: 40rem;
+    }

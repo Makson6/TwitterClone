@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Styles/App.css";
 import Timeline from "./Timeline";
 import SideBar from "./composants/SideBar/SideBar";
 import Trends from "./composants/Trends/Trends";

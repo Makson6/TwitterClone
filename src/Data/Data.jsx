@@ -1,12 +1,15 @@
-import cnn from "../../assets/images/cnn.png"
-import times from "../../assets/images/times.png"
-import image from "../../assets/images/img-post.png"
-import twitter from "../../assets/images/twitter-logo.png"
+import Cnn from "../assets/images/cnn.png"
+import Times from "../assets/images/times.png"
+import Image from "../assets/images/img-post.png"
+import Twitter from "../assets/images/twitter-logo.png"
+import Verified from "../assets/Icons/Verified.svg";
+import More2 from "../assets/Icons/Others/More-2.svg"
+
 
 export const data = [
     {
        id: 1,
-       logo:cnn,
+       logo:Cnn,
        content:{
             body:{
                 title:{
@@ -28,7 +31,7 @@ export const data = [
     },
     {
        id: 2,
-       logo:times,
+       logo:Times,
        content:{
             body:{
                 title:{
@@ -38,7 +41,7 @@ export const data = [
                     details3:"2h"
                 },
                 text:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
-                image: image
+                image: Image
             },
             actions:{
                 action1:19,
@@ -50,7 +53,7 @@ export const data = [
     },
     {
        id: 3,
-       logo:twitter,
+       logo:Twitter,
        content:{
             body:{
                 title:{
@@ -72,7 +75,7 @@ export const data = [
     },
     {
        id: 4,
-       logo:twitter,
+       logo:Twitter,
        content:{
             body:{
                 title:{
@@ -94,7 +97,7 @@ export const data = [
     },
     {
        id: 5,
-       logo:twitter,
+       logo:Twitter,
        content:{
             body:{
                 title:{
@@ -115,3 +118,60 @@ export const data = [
        }
     },
  ];
+const data2=[
+    {id:1,
+    avatar:{Times},
+    author:{
+        name:'The New York Times',
+        logo:{Verified},
+        detail:'@nytimes'
+    },
+    },
+    {id:2,
+    avatar:{Cnn},
+    author:{
+        name:'CNN',
+        logo:{Verified},
+        detail:'@CNN'
+    },
+    },
+    {id:3,
+    avatar:{Twitter},
+    author:{
+        name:'Twitter',
+        logo:{Verified},
+        detail:'@Twitter'
+    },
+    },
+];
+export const trendsData = [
+    {
+        id: 1,
+        icon:{More2},
+        titreTrend:{
+            titre1:"Trending in Turkey",
+            titre2:"#SQUID",
+            titre3:"2,066 Tweets",
+             }
+   
+    },
+    {id: 2,
+    icon:{More2},
+    titreTrend:{
+        titre1:"Trending in Turkey",
+        titre2:"#SQUID",
+        titre3:"2,066 Tweets",
+         },
+  },
+  {
+    id: 3,
+    icon:{More2},
+    titreTrend:{
+        titre1:"Trending in Turkey",
+        titre2:"#SQUID",
+        titre3:"2,066 Tweets",
+         }
+  }
+] ;
+
+export default data2;

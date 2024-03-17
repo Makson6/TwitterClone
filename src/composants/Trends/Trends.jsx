@@ -1,6 +1,6 @@
-import "./Trends.css"
+import "../../Styles/Trends.css"
 import SearchBar from "./SearchB/SearchBar";
-import Followers from "./Followers/Followers";
+import Followers from "./Followers/Followers"
 import Trend from "./Trend/Trend";
 
 export default function Trends (){

@@ -1,5 +1,6 @@
-import data2 from "../../Data/Data2"
+import data2 from "../../../Data/Data";
 import TrendAuthor from "./TrendAuthor";
+
 
 export default function Followers() {
     return (
@@ -13,6 +14,6 @@ export default function Followers() {
            ))}
         <p className="p">Show more</p>
         </div>
-           </>
+      </>
         
         )}

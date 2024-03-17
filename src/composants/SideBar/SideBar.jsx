@@ -1,6 +1,3 @@
-
-import { Link } from "react-router-dom"
-
 import Tweeter from "../../assets/Icons/Others/Twitter.svg"
 import HomeFill from "../../assets/Icons/Others/Home-Fill.svg"
 import Explore from "../../assets/Icons/Others/Explore.svg"
@@ -13,7 +10,8 @@ import More from "../../assets/Icons/Others/More.svg"
 import More2 from "../../assets/Icons/Others/More-2.svg"
 import Private from "../../assets/Icons/Others/Private.svg"
 import ProfilePhoto from "../../assets/Profile-Photo.svg"
-import "./sideBar.css"
+import { Link } from "react-router-dom"
+import "../../Styles/SideBar.css"
 
 export default function SideBar() {
     return (
@@ -24,7 +22,7 @@ export default function SideBar() {
                 <Link to="">
                     <img src={Tweeter} alt="" />
                 </Link>
-                <Link to="">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={HomeFill} alt="" />
                         <h1 className="page-title-sidebar">Home</h1>
@@ -33,7 +31,7 @@ export default function SideBar() {
 
 
 
-                <Link to="">
+                <Link to="/explore">
                     <div className="side-nav">
                         <img src={Explore} alt="" />
                         <h1 className="page-title-sidebar">Explore</h1>
@@ -41,7 +39,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="">
+                <Link to="/notifications">
                     <div className="side-nav">
                         <img src={Notifications} alt="" />
                         <h1 className="page-title-sidebar">Notifications</h1>
@@ -50,7 +48,7 @@ export default function SideBar() {
 
 
 
-                <Link to="">
+                <Link to="/messages">
                     <div className="side-nav">
                         <img src={Message} alt="" />
                         <h1 className="page-title-sidebar">Messages</h1>
@@ -58,7 +56,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="">
+                <Link to="/bookmarks">
                     <div className="side-nav">
                         <img src={Bookmarks} alt="" />
                         <h1 className="page-title-sidebar">Bookmarks</h1>
@@ -66,7 +64,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="">
+                <Link to="/lists">
                     <div className="side-nav">
                         <img src={Lists} alt="" />
                         <h1 className="page-title-sidebar">Lists</h1>
@@ -74,7 +72,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="">
+                <Link to="/profile">
                     <div className="side-nav">
                         <img src={Profile} alt="" />
                         <h1 className="page-title-sidebar">Profile</h1>
@@ -82,7 +80,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="">
+                <Link to="/more">
                     <div className="side-nav">
                         <img src={More} alt="" />
                         <h1 className="page-title-sidebar">More</h1>
@@ -100,7 +98,7 @@ export default function SideBar() {
                         </div>
                    <p className="tweet-title-details"> @Bradley_</p>
                 </div>
-                    <img className="img" src={More2} alt="" srcset="" />
+                    <img className="img" src={More2} alt="" />
             </div>
 
         </div>
