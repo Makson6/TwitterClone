@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 .trends {
+    flex: 0 0 23%;
     font-family: 'Inter', sans-serif;
     border-right: 1px solid #2F3336 ;
     width: 19rem;
@@ -23,11 +24,11 @@
 }
 .trend{
     background-color: rgb(35, 34, 34);
-    margin: 4%;
+    margin: 2%;
     border-radius: 7px;
     padding-left: 0.6rem;
     padding-right: 0.4rem;
-    width: 88.1%;
+    width: 90%;
     display: inline-block;
     align-items: center;
 }
@@ -43,24 +44,39 @@
     display: flex;
     justify-content: space-between;
 }
-.author>.author-detail{
+.author-detail{
     color: #666768;
-    /* padding-left: 45px; */
 }
+
+    div>.author {
+        /* display: inline-block;
+        width: 10rem;
+        gap: 10px;
+        font-size: 1rem; */
+        display: inline-block;
+        /* justify-content: space-between; */
+        color: whitesmok
+        
+    }
 
 .author-name{
     font-weight: bold;
     display: flex;
     justify-content: space-between;
+    /* color:white */
 }
 .trend-author{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: whitesmoke;
+    align-items: flex-start;
+
 }
 .content{
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+    /* justify-content: space-between; */
 }
 .trend-content>p{
     margin-top: 0.2rem;
@@ -90,20 +106,18 @@ div>.trend-avatar{
     border-radius: 19px;
     height: 1.7rem;
     margin-top: 4px;
-    margin-bottom: 4px;
-    margin-left: 1.7rem;
-    
+    margin-bottom: 4px;    
 }
 
 button{
     cursor: pointer;
 }
-.p{
+/* .p{
     margin: 0;
     margin-bottom: 12px;
     color: rgb(77, 77, 241);
     cursor: pointer;
-}
+} */
 
 /* Actions hover */
 

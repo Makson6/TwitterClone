@@ -6,10 +6,9 @@ export default function Trend() {
   return (
     <div className="trend">
       <div className="titre">
-        <h3>Trends for you</h3>
+        <h3 >Trends for you</h3>
         <img src={Setting} />
       </div>
-
       <div className="author">
           <div className="trend-content">
             <p className="author-detail">
@@ -60,7 +59,7 @@ export default function Trend() {
               </p>
           </div> 
       </div>
-      <p className="p">Show more</p>
+      <p  className="p">Show more</p>
 
     </div>
   );

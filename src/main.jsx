@@ -14,7 +14,15 @@ import Profile from "./Pages/Profile.jsx"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
-const router = createBrowserRouter([
+// import Tweet from "./composants/Tweets/Tweet.jsx";
+// import TweetContent from "./composants/Tweets/TweetContent/TweetContent.jsx";
+// import TweetAvatar from "./composants/Tweets/TweetAvatar.jsx";
+
+export const router = createBrowserRouter([
+  // {
+  //  path:"/test",
+  //  element:<Test/>
+  // },
   {
     path:"/",
     element:<App/>
@@ -22,6 +30,7 @@ const router = createBrowserRouter([
   {path:"/",
    element:<Layout/>,
    children:[
+    
     {
       path:"/home",
       element:<Home/>

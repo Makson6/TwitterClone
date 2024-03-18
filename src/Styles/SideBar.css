@@ -4,6 +4,7 @@
     cursor: inherit;
 }
 .sidebar {
+    flex: 0 0 23%;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     padding-right: 3rem;
@@ -19,6 +20,7 @@
 }
 
 .side-nav{
+    
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -33,7 +35,7 @@
     background-color: #1D9BF0;
     color: white;
     font-size: 1rem;
-    width: 100%;
+    width: 90%;
 }
 .user-footer{
     display: flex;
@@ -50,6 +52,7 @@
     gap: 10px;
     font-size: 1rem;
     margin-bottom: 0;
+    cursor: pointer;
 }
 .footer-content>p{
     margin: 0;
