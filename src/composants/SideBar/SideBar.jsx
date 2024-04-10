@@ -11,7 +11,7 @@ import More2 from "../../assets/Icons/Others/More-2.svg"
 import Private from "../../assets/Icons/Others/Private.svg"
 import ProfilePhoto from "../../assets/Profile-Photo.svg"
 import { Link } from "react-router-dom"
-import "../../Styles/SideBar.css"
+import "../../App.css"
 
 export default function SideBar() {
     return (

@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+} 
 body {
-    background-color: black;
+    background-color: rgb(5, 5, 5);
     color: white;
     margin: 0 auto;
     max-width: 1800px;
@@ -14,13 +23,109 @@ body {
     justify-content: space-between;
 }
 
-.timeline {
+@layer components {
+    .sidebar {
+        @apply flex-[0_0_22%];
+    }
+
+    .trends {
+        @apply flex-[0_0_28%];
+    }
+
+    .timeline {
+        @apply relative flex-[0_0_50%] border-x border-[#2F3336] border-solid
+    }
+}
+
+
+
+/*Sidebar Styles*/
+
+
+
+
+/* .sidebar {
+    flex: 0 0 23%;
+    font-family: 'Inter', sans-serif;
+    border-left: 1px solid #2F3336;
+    padding-right: 3rem;
+}
+.sidebar-content{
+    margin-left: 1rem;
+}
+
+.page-title-sidebar {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: rgb(238, 231, 231);
+}
+
+.side-nav{
+    
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.buttonS{
+    margin-top: 1.6rem;
+    text-transform: capitalize;
+    padding: .4rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1D9BF0;
+    color: white;
+    font-size: 1rem;
+    width: 90%;
+}
+.user-footer{
+    display: flex;
+    padding-top: 17rem;
+    justify-content: space-between;
+}
+.user-footer>.img{
+    padding-left: 3rem;
+}
+.footer-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.footer-content>p{
+    margin: 0;
+}
+
+/* Effets hover */
+/* 
+.side-nav>h1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+img:hover{
+    cursor: pointer;
+}
+.author:hover{
+    cursor: pointer;
+}  */
+
+
+
+/*Timeline Styles*/
+
+
+
+
+/* .timeline {
     flex: 0 0 50%;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
 }
-
+/*
 .header {
     padding: 1.5rem 1rem;
     display: flex;
@@ -50,7 +155,6 @@ body {
 
 .avatar {
     flex: 0 0 70px;
-    /*padding: 0 rem;*/
 }
 
 .avatar img {
@@ -86,7 +190,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /*padding: 0.8rem 0;*/
     gap: 1rem;
 }
 
@@ -115,8 +218,6 @@ body {
 }
 
 .tweet-avatar {
-    /*height: 70px;*/
-    /*width: 70px;*/
     flex: 0 0 70px;
 }
 
@@ -205,7 +306,6 @@ body {
 }
 
 
-/* Espace de actions hover */
 
 
 
@@ -245,4 +345,120 @@ body {
     }
 h2.not-found-text{
     margin-left: 40rem;
+    } */
+
+
+
+
+/*Trends Styles*/
+
+/* .trends {
+    flex: 0 0 23%;
+    font-family: 'Inter', sans-serif;
+    border-right: 1px solid #2F3336 ;
+    width: 19rem;
+}
+
+.trends>#search-bar{
+    display: flex;
+    background-color: rgb(35, 34, 34);
+    margin: 4%;
+    height: 25px;
+    border-radius: 25px;
+}
+.trends>#search-bar > input {
+   border: none;
+   outline: none;
+   background:none;
+}
+.trends>#search-bar > img {
+    border: none;
+}
+.trend{
+    background-color: rgb(35, 34, 34);
+    margin: 2%;
+    border-radius: 7px;
+    padding-left: 0.6rem;
+    padding-right: 0.4rem;
+    width: 90%;
+    display: inline-block;
+    align-items: center;
+}
+.trend>.p{
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 13px;
+    color: rgb(77, 77, 241);
+    
+}
+
+.titre{
+    display: flex;
+    justify-content: space-between;
+}
+.author-detail{
+    color: #666768;
+}
+
+    div>.author {
+        display: inline-block;
+        color: whitesmok
+        
     }
+
+.author-name{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.trend-author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    align-items: flex-start;
+
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+}
+.trend-content>p{
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+div>.trend-avatar{
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 100%;
+    margin: 5px;
+}
+.author-name{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.trend>.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trend-content{
+    margin-bottom: 18px;
+}
+.content>button{
+    background-color: rgb(223, 212, 212)(216, 210, 210)(216, 210, 210)(138, 127, 127);
+    border: none;
+    border-radius: 19px;
+    height: 1.7rem;
+    margin-top: 4px;
+    margin-bottom: 4px;    
+}
+
+button{
+    cursor: pointer;
+}
+
+.author-name:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}  */

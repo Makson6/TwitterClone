@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.trends {
+
+
+
+
+
+
+
+
+
+/* .trends {
     flex: 0 0 23%;
     font-family: 'Inter', sans-serif;
     border-right: 1px solid #2F3336 ;
@@ -49,12 +61,7 @@
 }
 
     div>.author {
-        /* display: inline-block;
-        width: 10rem;
-        gap: 10px;
-        font-size: 1rem; */
         display: inline-block;
-        /* justify-content: space-between; */
         color: whitesmok
         
     }
@@ -63,7 +70,6 @@
     font-weight: bold;
     display: flex;
     justify-content: space-between;
-    /* color:white */
 }
 .trend-author{
     display: flex;
@@ -76,7 +82,6 @@
 .content{
     display: flex;
     align-items: flex-start;
-    /* justify-content: space-between; */
 }
 .trend-content>p{
     margin-top: 0.2rem;
@@ -112,16 +117,8 @@ div>.trend-avatar{
 button{
     cursor: pointer;
 }
-/* .p{
-    margin: 0;
-    margin-bottom: 12px;
-    color: rgb(77, 77, 241);
-    cursor: pointer;
-} */
-
-/* Actions hover */
 
 .author-name:hover{
     text-decoration: underline;
     cursor: pointer;
-}
+}  */

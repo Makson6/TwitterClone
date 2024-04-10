@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-*{
-    text-decoration: none;
-    cursor: inherit;
-}
-.sidebar {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .sidebar {
     flex: 0 0 23%;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
@@ -59,7 +60,7 @@
 }
 
 /* Effets hover */
-
+/* 
 .side-nav>h1:hover{
     text-decoration: underline;
     cursor: pointer;
@@ -69,4 +70,4 @@ img:hover{
 }
 .author:hover{
     cursor: pointer;
-}
+}  */
