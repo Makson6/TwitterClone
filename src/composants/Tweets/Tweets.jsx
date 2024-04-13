@@ -1,12 +1,15 @@
 import Tweet from './Tweet';
-import {data}  from '../../Data/Data';
+import { useContext } from 'react';
+import { TweetContext } from '../../UseContext/TweetContext';
+
+
 
 export default function Tweets (){
-    
-    return (<div className="tweets">
+    let {posts} = useContext(TweetContext)
 
-        {data.map(el => (
-            <Tweet key={el.id} tableau={el}/>
+    return (<div className="tweets">
+        {posts?.map(el => (
+            <Tweet  key={el.id} tableau={el}/>
         ))}
 
     </div>)}

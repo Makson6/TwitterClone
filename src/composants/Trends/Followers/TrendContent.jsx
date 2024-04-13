@@ -1,6 +1,6 @@
-import { useRef } from "react";
+
 import { Link } from "react-router-dom";
-useRef
+
 
 
 function TrendContent(pois) {

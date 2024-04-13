@@ -1,18 +1,17 @@
 import TweetEditor from "./composants/TweetEditor/TweetEditor"
 import Header from "./composants/Header/Header" 
 import Tweets from "./composants/Tweets/Tweets/"
-// import App from "./Styles/App.css"
+import TweetProvider from "./providers/TweetProvider";
 
 function Timeline (){
-
   return (
-    <>
-    <div className='timeline'>
+    <div>
       <Header />
-      <TweetEditor/>
-      <Tweets />
+      <TweetProvider>
+        <TweetEditor />
+        <Tweets  />
+      </TweetProvider>
     </div>
-    </>
-  )
+  );
 }
 export default Timeline 

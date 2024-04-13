@@ -2,7 +2,7 @@ import Header from "../composants/Header/Header";
 import TweetEditor from "../composants/TweetEditor/TweetEditor";
 
 
-function Profile(){
+function UserProfile(){
   
     return(
       <div className="timeline">
@@ -13,4 +13,4 @@ function Profile(){
     )
 }
 
-export default Profile;
+export default UserProfile;

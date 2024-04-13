@@ -12,18 +12,13 @@ import Messages from "./Pages/Messages.jsx"
 import More from "./Pages/More.jsx"
 import Notifications from "./Pages/Notifications.jsx"
 import Profile from "./Pages/Profile.jsx"
+import UserProfile from "./Pages/UserProfile.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import TweetProvider from "./providers/TweetProvider.jsx";
 
-
-// import Tweet from "./composants/Tweets/Tweet.jsx";
-// import TweetContent from "./composants/Tweets/TweetContent/TweetContent.jsx";
-// import TweetAvatar from "./composants/Tweets/TweetAvatar.jsx";
 
 export const router = createBrowserRouter([
-  // {
-  //  path:"/test",
-  //  element:<Test/>
-  // },
+ 
   {
     path:"/",
     element:<App/>
@@ -58,7 +53,15 @@ export const router = createBrowserRouter([
     },
     {
       path:"/profile",
-      element:<Profile />
+      element:<Profile/>
+    },
+    {
+      path:"/profile/:userid",
+      element:<Profile/>
+    },
+    {
+      path:"/profile/@Bradley",
+      element:<UserProfile/>
     },
     {
       path:"/more",
@@ -74,6 +77,8 @@ export const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+     <TweetProvider>
+      <RouterProvider router={router} />
+    </TweetProvider>
   </React.StrictMode>
 );
