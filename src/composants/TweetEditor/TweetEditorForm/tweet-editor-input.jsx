@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 
 export default function TweetEditorInput (){ 
   const [inputText,setInputText]=useState('');
+  const []=useContext()
   const handleChange = (e)=> {
     setInputText(e.target.value)
     if(e.target.value.length == 100){
       alert("vous ne pouvez pas poster plus de 100 caracteres!!")
     }
+    
     
         
   };
