@@ -12,13 +12,10 @@ import Private from "../../assets/Icons/Others/Private.svg"
 import ProfilePhoto from "../../assets/Profile-Photo.svg"
 import { Link } from "react-router-dom"
 import "../../App.css"
-import { useContext } from "react"
-import { TweetContext} from "../../UseContext/TweetContext"
 
-export default function SideBar(props) {
-let {posts}=useContext(TweetContext);
 
-console.log(posts);
+export default function SideBar() {
+
 
     return (
         
@@ -98,7 +95,7 @@ console.log(posts);
             <div className="user-footer">
                 <img src={ProfilePhoto} alt="" />
                 <div className="footer-content">
-            <Link to="/profile/@Bradley" >
+            <Link to="/profile/@Bradley_" >
                     <div className="footer-cont">
                         <p className="footer-cont">BradleyOrtiz {<img src={Private}/>}</p>
                     </div>
