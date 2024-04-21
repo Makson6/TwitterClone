@@ -3,9 +3,10 @@ import TweetEditorForm from "./TweetEditorForm/tweet-editor-form";
 
 
 
-export default function TweetEditor () {
+export default function TweetEditor ({setUpdate}) {
+
      return <div className="tweet-editor"> 
           <Avatar/>
-          <TweetEditorForm/>
+          <TweetEditorForm setUpdate ={setUpdate}/>
      </div>
 }

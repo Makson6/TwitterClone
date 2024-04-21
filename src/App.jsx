@@ -4,12 +4,13 @@ import SideBar from "./composants/SideBar/SideBar";
 import Trends from "./composants/Trends/Trends";
 
 function App (){
+ 
   
   return (
     <>
-      <SideBar />
+      <SideBar/>
       <Timeline />
-      <Trends />  
+      <Trends/>
     </>
   )
 }

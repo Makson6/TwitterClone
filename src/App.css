@@ -15,8 +15,7 @@ body {
     color: white;
     margin: 0 auto;
     max-width: 1800px;
-}
-
+}   
 #root {
     width: 100%;
     display: flex;
@@ -159,6 +158,30 @@ body {
 .footer-content>p{
     margin: 0;
 }
+
+
+
+
+
+
+
+/* actions hover
+.tweet-action:hover>img {
+    transition: 100ms;
+    border: solid 1px  ;
+    border-radius: 30px;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(869deg) brightness(118%) contrast(119%);
+}
+.tweet-action:nth-child(1):hover {
+        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(869deg) brightness(118%) contrast(119%);
+}
+
+.tweet-action:nth-child(2):hover {
+        filter: invert(42%) sepia(93%) saturate(301%) hue-rotate(87deg)brightness(119%) contrast(119%);
+}
+.tweet-action:nth-child(3):hover {
+        filter: invert(20%) sepia(100%) saturate(9000%) hue-rotate(1deg) brightness(209%) contrast(210%);
+} */
 
 /* Effets hover */
 /* 

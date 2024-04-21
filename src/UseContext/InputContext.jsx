@@ -1,5 +1,5 @@
 import React,{createContext,useState,useContext} from "react";
-import { data } from "../Data/Data";
+import { data } from "../data/Data";
 
 
 const InputContext = createContext();

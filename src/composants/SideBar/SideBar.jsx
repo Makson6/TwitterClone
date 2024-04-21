@@ -75,7 +75,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/profile">
+                <Link to="/profile/@Bradley_">
                     <div className="side-nav">
                         <img src={Profile} alt="" />
                         <h1 className="page-title-sidebar">Profile</h1>

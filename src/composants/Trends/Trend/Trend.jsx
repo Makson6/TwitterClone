@@ -1,5 +1,5 @@
 import Setting from "../../../assets/Icons/Others/Settings.svg";
-import  {trendsData } from "../../../Data/Data";
+import  {trendsData } from "../../../data/Data";
 import More2 from "../../../assets/Icons/Others/More-2.svg"
 
 export default function Trend() {

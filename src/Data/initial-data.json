@@ -1,4 +1,5 @@
-{"current-user":{
+{
+    "currentUser":{
     "name": "Bradlay Ortiz",
     "userName": "bradley_",
     "time": "now",
@@ -7,13 +8,13 @@
 "tweets" : [
     {
        "id": 1,
-       "logo": "",
+       "logo": "/src/assets/images/cnn.png",
+       "details2":".",
        "content":{
-            "body":{
-                "title":{
-                    "author":"CNN",
-                    "details":"@CNN",
-                    "details2":".",
+           "body":{
+               "title":{
+                   "author":"CNN",
+                   "userName":"@CNN",
                     "details3":"7m"
                 },
                 "text":"President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a major breakthrough that would serve to both strengthen the US steel industry and combat the global climate crisis.",
@@ -29,12 +30,12 @@
     },
     {
        "id": 2,
-       "logo": "",
+       "logo": "/src/assets/images/times.png",
        "content":{
-            "body":{
-                "title":{
-                    "author":"The New York Times",
-                    "details":"@nytimes",
+           "body":{
+               "title":{
+                   "author":"The New York Times",
+                   "userName":"@nytimes",
                     "details2":".",
                     "details3":"2h"
                 },
@@ -51,12 +52,12 @@
     },
     {
        "id": 3,
-       "logo":"Twitter",
+       "logo":"/src/assets/images/twitter-logo.png",
        "content":{
-            "body":{
-                "title":{
-                    "author":"Twitter",
-                    "details":"@Twitter",
+           "body":{
+               "title":{
+                   "author":"Twitter",
+                   "userName":"@Twitter",
                     "details2":".",
                     "details3":"Oct 29"
                 },
@@ -73,12 +74,12 @@
     },
     {
        "id": 4,
-       "logo":"Twitter",
+       "logo":"/src/assets/images/twitter-logo.png",
        "content":{
-            "body":{
-                "title":{
-                    "author":"Twitter",
-                    "details":"@Twitter",
+           "body":{
+               "title":{
+                   "author":"Twitter",
+                   "userName":"@Twitter",
                     "details2":".",
                     "details3":"Oct 4"
                 },
@@ -95,12 +96,12 @@
     },
     {
        "id": 5,
-       "logo":"Twitter",
+       "logo":"/src/assets/images/twitter-logo.png",
        "content":{
-            "body":{
-                "title":{
-                    "author":"Twitter",
-                    "details":"@Twitter",
+           "body":{
+               "title":{
+                   "author":"Twitter",
+                   "userName":"@Twitter",
                     "details2":".",
                     "details3":"Oct 4"
                 },

@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { TweetContext } from "../UseContext/TweetContext";
-// import { data } from '../Data/Data';
+import Data from "../data/initial-data.json"
 
-import Dataa from "../data/initial-data.json"
 
 
 const TweetProvider = ({children}) => {
-
-    const [posts, setPosts] = useState(Dataa.tweets);
-    const [newTweet, setNewTweet ]=useState();
-    
+    const [userId, setUserId]= useState(Data.currentUser)
+    const [posts, setPosts] = useState(Data.tweets);
+    const [user, setUser ]=useState(Data.tweets);
+     
+  
     return (
-    <TweetContext.Provider value={{ posts, setPosts, newTweet, setNewTweet}}>
-        {children} 
+    <TweetContext.Provider value={{ posts, setPosts,user,userId, setUser}}>
+        {children}
     </TweetContext.Provider>
-    )
+    )                       
 };
 
 export default TweetProvider;

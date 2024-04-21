@@ -1,20 +1,17 @@
-import { useContext, useState } from "react";
-import TweetContent from "../../Tweets/TweetContent/TweetContent";
 
+import MessageError from "../../../Errors"
 
-export default function TweetEditorInput (){ 
-  const [inputText,setInputText]=useState('');
-  
-  const [newTweet,setNewTweet]=useContext(TweetContent);
+export default function TweetEditorInput ({register,error}){ 
 
-  const handleChange = (e)=> {
-    setInputText(e.target.value)
-    if(e.target.value.length == 100){
-      alert("vous ne pouvez pas poster plus de 100 caracteres!!")
-    }
-    
-        
-  };
-  
-  return <input value={newTweet} onChange={handleChange } maxLength={100} placeholder="What's happening?" className="tweet-editor-input" />
+  return <div>
+    <input
+    type="text"
+    name="Post"
+    maxLength={100}
+    className="tweet-editor-input"
+    placeholder="What’s happening?"
+    {...register("text", { required: true, maxLength: 100 })}
+    />
+    {error.text && <MessageError error={ error} />}
+  </div>
 }

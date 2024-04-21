@@ -2,8 +2,8 @@ import ProfilePhoto from "../assets/Profile-Photo.svg"
 import TweetEditor from "../composants/TweetEditor/TweetEditor";
 import Header from "../composants/Header/Header";
 function UserProfile(posts){
-  console.log(posts);
-    return(
+
+  return(
          <div className="timeline">
                 <Header/>
         <div className="tweet">

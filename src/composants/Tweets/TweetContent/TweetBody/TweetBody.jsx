@@ -1,12 +1,11 @@
 import TweetImage from "./TweetImage";
 import TweetText from "./TweetText";
 import TweetTitle from "./TweetTitle";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 
 export default function TweetBoby (props){
-  let userId = props.body.title.details;
-  
+  let userId = props.body.title.userName
   return (
     <div className="tweet-body">
       <Link to={`/profile/${userId}`}>

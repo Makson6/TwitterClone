@@ -4,13 +4,12 @@ import Tweets from "./composants/Tweets/Tweets/"
 import TweetProvider from "./providers/TweetProvider";
 
 function Timeline (){
+  
   return (
-    <div>
+    <div className="timeline">
       <Header />
-      <TweetProvider>
-        <TweetEditor />
+        <TweetEditor  />
         <Tweets  />
-      </TweetProvider>
     </div>
   );
 }

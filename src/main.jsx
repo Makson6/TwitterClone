@@ -13,12 +13,11 @@ import More from "./Pages/More.jsx"
 import Notifications from "./Pages/Notifications.jsx"
 import Profile from "./Pages/Profile.jsx"
 import UserProfile from "./Pages/UserProfile.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useParams } from "react-router-dom";
 import TweetProvider from "./providers/TweetProvider.jsx";
-import { InputProvider } from "./UseContext/InputContext.jsx";
 
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter( [
  
   {
     path:"/",
@@ -57,7 +56,7 @@ export const router = createBrowserRouter([
       element:<Profile/>
     },
     {
-      path:"/profile/:userid",
+      path:"/profile/:userName",
       element:<Profile/>
     },
     {
@@ -76,12 +75,11 @@ export const router = createBrowserRouter([
   }
 ]);
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
      <TweetProvider>
-      <InputProvider/>
          <RouterProvider router={router} />
-      <InputProvider/>
     </TweetProvider>
   </React.StrictMode>
 );

@@ -2,6 +2,7 @@ import TweetTitleAuthor from "../../TweetTitleAuthor";
 import TweetTitleDetails from "../../TweetTitleDetails";
 
 export default function TweetTitle(props) {
+  
   return (
     <div className="tweet-title">
       <TweetTitleAuthor author={props.title.author} />
@@ -17,7 +18,7 @@ export default function TweetTitle(props) {
           fill="#D9D9D9"
         />
       </svg>
-      <TweetTitleDetails details={props.title.details} />
+      <TweetTitleDetails details={props.title.userName} />
       <TweetTitleDetails details={props.title.details2} />
       <TweetTitleDetails details={props.title.details3} />
     </div>
