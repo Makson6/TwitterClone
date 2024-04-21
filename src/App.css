@@ -4,18 +4,20 @@
 @tailwind utilities;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-} 
+}
+
 body {
     background-color: rgb(5, 5, 5);
     color: white;
     margin: 0 auto;
     max-width: 1800px;
-}   
+}
+
 #root {
     width: 100%;
     display: flex;
@@ -24,93 +26,147 @@ body {
 
 
 
-@layer components{
+@layer components {
     .sidebar {
         @apply flex-[0_0_22%]
     }
+
     .trends {
         @apply flex-[0_0_28%]
     }
-    .timeline{
+
+    .timeline {
         @apply relative flex-[0_0_50%] border-x border-[#2F3336] border-solid
     }
-    .header{
+
+    .header {
         @apply flex items-center justify-between p-4 top-0 sticky border-b border-[#2F3336] z-[100] bg-black
     }
-    .top-tweets{
+
+    .top-tweets {
         @apply w-6 h-auto
     }
-    .page-title{
+
+    .page-title {
         @apply text-2xl font-bold
     }
-    .tweet-editor{
+
+    .tweet-editor {
         @apply flex items-start justify-start gap-[20px] px-[.3rem] py-4 border-b border-solid border-[#2F3336]
     }
-    .avatar{
+
+    .avatar {
         @apply flex-[0_0_70px]
     }
-    .tweet-editor-form{
+
+    .tweet-editor-form {
         @apply flex-auto
     }
-    .tweet-editor-input{
+
+    .tweet-editor-input {
         @apply h-[60] w-full border-none outline-none text-2xl bg-black text-white resize-none pt-[10px] my-[13px]
     }
-    .tweet-editor-buttons{
+
+    .tweet-editor-buttons {
         @apply flex items-center justify-between
     }
-    .tweet-editor-actions{
+
+    .tweet-editor-actions {
         @apply flex items-center justify-start gap-4
     }
-    .button{
+
+    .button {
         @apply capitalize py-[.7rem] px-6 border-none rounded-[50px] bg-[#1D9BF0] text-white text-base w-fit h-fit
     }
-    .tweet{
+
+    .tweet {
         @apply flex justify-start items-start gap-[20px] py-6 px-4 border-b border-solid border-[#2F3336]
     }
-    .tweet-avatar{
+
+    .tweet-avatar {
         @apply flex-[0_0_70px] max-w-full max-h-[100px] rounded-full
     }
-    .tweet-content{
+
+    .tweet-content {
         @apply flex flex-col items-start justify-start gap-[30px] w-full
     }
-    .tweet-body{
+
+    .tweet-body {
         @apply flex flex-col gap-2
     }
-    .tweet-title{
+
+    .tweet-title {
         @apply flex justify-start items-start gap-[10px] text-base
     }
-    .tweet-title-author{
+
+    .tweet-title-author {
         @apply text-base
     }
-    .tweet-title-details{
+
+    .tweet-title-details {
         @apply text-[#6E767D]
     }
-    .tweet-text{
+
+    .tweet-text {
         @apply text-[#D9D9D9] text-base
     }
-    .tweet-image{
+
+    .tweet-image {
         @apply w-full pt-[.3rem]
     }
+
     /* .tweet-image{
         @apply 
     }  */
-    .tweet-actions{
+    .tweet-actions {
         @apply flex justify-center items-center gap-20 text-[gray] text-base
     }
-    .tweet-actions svg{
+
+    .tweet-actions svg {
         @apply w-8 h-auto text-[#2F3336]
     }
-    .tweet-action{
+
+    .tweet-action :hover {
+        cursor: pointer;
+    }
+    .tweet-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        cursor: pointer;
+    }
+        
+    /* .tweet-action:hover>img {
+        transition: 100ms;
+        border: solid 1px  ;
+        border-radius: 30px;
+        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(869deg) brightness(118%) contrast(119%);
+    } */
+    /* .tweet-action:nth-child(1):hover {
+        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(869deg) brightness(118%) contrast(119%);
+    }
+
+    .tweet-action:nth-child(2):hover {
+        filter: invert(42%) sepia(93%) saturate(301%) hue-rotate(87deg)brightness(119%) contrast(119%);
+    }
+
+    .tweet-action:nth-child(3):hover {
+        filter: invert(20%) sepia(100%) saturate(9000%) hue-rotate(1deg) brightness(209%) contrast(210%);
+    } */
+
+    .tweet-action {
         @apply flex items-center justify-center gap-5
     }
-    .link{
+
+    .link {
         @apply text-white no-underline
-    }   
+    }
 }
 
 /*Sidebar Styles*/
 
-.sidebar-content{
+.sidebar-content {
     margin-left: 1rem;
 }
 
@@ -120,14 +176,14 @@ body {
     color: rgb(238, 231, 231);
 }
 
-.side-nav{
-    
+.side-nav {
+
     display: flex;
     align-items: center;
     gap: 1.2rem;
 }
 
-.buttonS{
+.buttonS {
     margin-top: 1.6rem;
     text-transform: capitalize;
     padding: .4rem;
@@ -138,15 +194,18 @@ body {
     font-size: 1rem;
     width: 90%;
 }
-.user-footer{
+
+.user-footer {
     display: flex;
     padding-top: 17rem;
     justify-content: space-between;
 }
-.user-footer>.img{
+
+.user-footer>.img {
     padding-left: 3rem;
 }
-.footer-cont{
+
+.footer-cont {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -155,7 +214,8 @@ body {
     margin-bottom: 0;
     cursor: pointer;
 }
-.footer-content>p{
+
+.footer-content>p {
     margin: 0;
 }
 
@@ -172,16 +232,7 @@ body {
     border-radius: 30px;
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(869deg) brightness(118%) contrast(119%);
 }
-.tweet-action:nth-child(1):hover {
-        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(869deg) brightness(118%) contrast(119%);
-}
 
-.tweet-action:nth-child(2):hover {
-        filter: invert(42%) sepia(93%) saturate(301%) hue-rotate(87deg)brightness(119%) contrast(119%);
-}
-.tweet-action:nth-child(3):hover {
-        filter: invert(20%) sepia(100%) saturate(9000%) hue-rotate(1deg) brightness(209%) contrast(210%);
-} */
 
 /* Effets hover */
 /* 
@@ -434,22 +485,25 @@ h2.not-found-text{
 /*Trends Styles*/
 
 
-.trends>#search-bar{
+.trends>#search-bar {
     display: flex;
     background-color: rgb(35, 34, 34);
     margin: 4%;
     height: 25px;
     border-radius: 25px;
 }
-.trends>#search-bar > input {
-   border: none;
-   outline: none;
-   background:none;
+
+.trends>#search-bar>input {
+    border: none;
+    outline: none;
+    background: none;
 }
-.trends>#search-bar > img {
+
+.trends>#search-bar>img {
     border: none;
 }
-.trend{
+
+.trend {
     background-color: rgb(35, 34, 34);
     margin: 2%;
     border-radius: 7px;
@@ -459,34 +513,36 @@ h2.not-found-text{
     display: inline-block;
     align-items: center;
 }
-.trend>.p{
+
+.trend>.p {
     margin: 0;
     margin-bottom: 5px;
     margin-top: 13px;
     color: rgb(77, 77, 241);
-    
+
 }
 
-.titre{
+.titre {
     display: flex;
     justify-content: space-between;
 }
-.author-detail{
+
+.author-detail {
     color: #666768;
 }
 
-    div>.author {
-        display: inline-block;
-        color: whitesmok
-        
-    }
+div>.author {
+    display: inline-block;
+    color: whitesmok
+}
 
-.author-name{
+.author-name {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
 }
-.trend-author{
+
+.trend-author {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -494,46 +550,52 @@ h2.not-found-text{
     align-items: flex-start;
 
 }
-.content{
+
+.content {
     display: flex;
     align-items: flex-start;
 }
-.trend-content>p{
+
+.trend-content>p {
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
 }
-div>.trend-avatar{
+
+div>.trend-avatar {
     max-width: 100%;
     max-height: 100px;
     border-radius: 100%;
     margin: 5px;
 }
-.author-name{
+
+.author-name {
     margin-top: 0;
     margin-bottom: 0;
 }
-.trend>.content{
+
+.trend>.content {
     display: flex;
     justify-content: space-between;
 }
 
-.trend-content{
+.trend-content {
     margin-bottom: 18px;
 }
-.content>button{
+
+.content>button {
     background-color: rgb(223, 212, 212)(216, 210, 210)(216, 210, 210)(138, 127, 127);
     border: none;
     border-radius: 19px;
     height: 1.7rem;
     margin-top: 4px;
-    margin-bottom: 4px;    
+    margin-bottom: 4px;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.author-name:hover{
+.author-name:hover {
     text-decoration: underline;
     cursor: pointer;
-}  
+}

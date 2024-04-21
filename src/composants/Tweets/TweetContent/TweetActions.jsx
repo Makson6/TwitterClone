@@ -7,6 +7,7 @@ import love from "../../../assets/Icons/Love.svg"
 
 export default function TweetActions (props){
     
+      
     return (
         <div className="tweet-actions">
            <TweetAction action={props.actions.action1} image={reply}/>

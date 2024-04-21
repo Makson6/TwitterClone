@@ -5,6 +5,6 @@
       .then((result) => {
           console.log(result.data);
       }).catch((err) => {
-        console.log(err('c odpdpdp'), err);
+        console.log(err('erreur de chargement'), err);
         
       });

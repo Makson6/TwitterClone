@@ -41,20 +41,7 @@ export default function TweetEditorForm() {
     };
     reset();
     const datat = [newPost, ...posts];
-    setPosts(datat); 
-    
-    
-//     const pos =()=>{
-
-      
-//       const datattt = [newPost, ...posts];
-       
-//         const donee= datattt.filter((item) => item.id>5)
-    
-//             console.log(donee);
-//     }
-// pos ()    
- 
+    setPosts(datat);  
     
   }
 
