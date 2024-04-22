@@ -6,7 +6,8 @@ import axios from "axios";
 
 
 const TweetProvider = ({children}) => {
-    const [url, setUrl] = useState ("http://localhost:3000")
+    // const [url, setUrl] = useState ("http://localhost:3000")
+    const [url, setUrl] = useState ("twitter-clone-red-eight.vercel.app")
     const [userId, setUserId]= useState()
     const [posts, setPosts] = useState();
     const [user, setUser ]=useState();

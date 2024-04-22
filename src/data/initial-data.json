@@ -136,6 +136,48 @@
           "action4": ""
         }
       }
+    },
+    {
+      "id": "061",
+      "logo": "/src/assets/images/Profile-Photo.svg",
+      "content": {
+        "body": {
+          "title": {
+            "author": "Bradlay Ortiz",
+            "userName": "bradley_",
+            "details3": "now"
+          },
+          "text": "kdldfk",
+          "image": ""
+        },
+        "actions": {
+          "action1": 0,
+          "action2": 0,
+          "action3": 0,
+          "action4": ""
+        }
+      }
+    },
+    {
+      "id": "071",
+      "logo": "/src/assets/images/Profile-Photo.svg",
+      "content": {
+        "body": {
+          "title": {
+            "author": "Bradlay Ortiz",
+            "userName": "bradley_",
+            "details3": "now"
+          },
+          "text": "les depots",
+          "image": ""
+        },
+        "actions": {
+          "action1": 0,
+          "action2": 0,
+          "action3": 0,
+          "action4": ""
+        }
+      }
     }
   ]
 }

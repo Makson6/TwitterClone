@@ -16,7 +16,6 @@ export default function TweetEditorForm() {
   const { posts, setPosts, user,userId, setUser, url } = useContext(TweetContext);
   
   function onSubmit(data) {
-    console.log(posts.length, url);
     
     const newPost = {
       id: "0" + posts.length + 1,
