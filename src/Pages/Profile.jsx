@@ -1,33 +1,20 @@
 import { useContext, useRef, useState} from "react";
-import { TweetContext } from "../UseContext/TweetContext";
+import { TweetContext } from "../Context/TweetContext";
 import { useParams } from "react-router-dom";
 import Tweet from "../composants/Tweets/Tweet";
-
+import  axios  from "axios";
 
 function Profile(){
   const {userName} = useParams();
   const {user, posts,userId,setUserId} = useContext(TweetContext);
-  
 
-  function photoProfil(){
-    if (userName == "@Bradley_") {
-      return userId.src 
-    }
-    if (userName == "@CNN") {
-      return user[0].logo 
-    }
-    if (userName == "@nytimes") {
-      return user[1].logo 
-    }else {
-      return user[2].logo
-    }
-  }
   
 //definir une const pour stocker a condition de filtrage
 
 const filteredData = posts.filter(item=> 
   item.id > 5)
   //faire en sorte que xa affiche sur le navigateur  
+
 
   return(
     <div className="timeline">
@@ -36,7 +23,7 @@ const filteredData = posts.filter(item=>
         Profil de : {userName}
       </h1>
       <div >
-               <img className="avatar" src={photoProfil()}/>
+               <img className="avatar" src={userId.src}/>
       </div>
         </div>
 

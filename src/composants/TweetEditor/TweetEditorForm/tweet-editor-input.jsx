@@ -1,8 +1,7 @@
 
-import MessageError from "../../../Errors"
+import MessageError from "../../../Pages/Notfound"
 
 export default function TweetEditorInput ({register,error}){ 
-
   return <div>
     <input
     type="text"

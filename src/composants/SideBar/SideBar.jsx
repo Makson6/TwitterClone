@@ -9,7 +9,7 @@ import Profile from "../../assets/Icons/Others/Profile.svg"
 import More from "../../assets/Icons/Others/More.svg"
 import More2 from "../../assets/Icons/Others/More-2.svg"
 import Private from "../../assets/Icons/Others/Private.svg"
-import ProfilePhoto from "../../assets/Profile-Photo.svg"
+import ProfilePhoto from "../../assets/images/Profile-Photo.svg"
 import { Link } from "react-router-dom"
 import "../../App.css"
 
@@ -34,7 +34,7 @@ export default function SideBar() {
 
 
 
-                <Link to="/explore">
+                <Link to="/home">
                     <div className="side-nav">
                         <img src={Explore} alt="" />
                         <h1 className="page-title-sidebar">Explore</h1>
@@ -42,7 +42,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/notifications">
+                <Link to="/home">
                     <div className="side-nav">
                         <img src={Notifications} alt="" />
                         <h1 className="page-title-sidebar">Notifications</h1>
@@ -51,7 +51,7 @@ export default function SideBar() {
 
 
 
-                <Link to="/messages">
+                <Link to="/home">
                     <div className="side-nav">
                         <img src={Message} alt="" />
                         <h1 className="page-title-sidebar">Messages</h1>
@@ -59,7 +59,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/bookmarks">
+                <Link to="/home">
                     <div className="side-nav">
                         <img src={Bookmarks} alt="" />
                         <h1 className="page-title-sidebar">Bookmarks</h1>
@@ -67,7 +67,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/lists">
+                <Link to="/home">
                     <div className="side-nav">
                         <img src={Lists} alt="" />
                         <h1 className="page-title-sidebar">Lists</h1>
@@ -83,7 +83,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/more">
+                <Link to="/home">
                     <div className="side-nav">
                         <img src={More} alt="" />
                         <h1 className="page-title-sidebar">More</h1>

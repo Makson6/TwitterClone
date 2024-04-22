@@ -1,10 +1,10 @@
 import { useRef, useState } from "react"
 
 export default function TweetAction (props){
- const [action, setAction] = useState(props.action);
+
+    const [action, setAction] = useState(props.action);
  let isclicked = useRef(false);
 
- 
  function click(){
     
      if(isclicked.current == false){
@@ -21,14 +21,13 @@ export default function TweetAction (props){
         } else{
             setAction(action - 1)}
             
-            click();     
-            
+            click();    
         }
        
         
         return (
         <div className="tweet-action">
-              <img src={props.image} />
+              <img onClick={increm}  src={props.image} />
               <span onClick={increm} >{action}</span>
         </div>
     )

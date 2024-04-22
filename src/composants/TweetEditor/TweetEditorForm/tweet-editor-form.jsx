@@ -2,7 +2,8 @@ import TweetEditorInput from "./tweet-editor-input";
 import TweetEditorButtons from "./tweet-editor-buttons";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
-import { TweetContext } from "../../../UseContext/TweetContext";
+import { TweetContext } from "../../../Context/TweetContext";
+import axios from "axios";
 
 export default function TweetEditorForm() {
   const {
@@ -12,10 +13,10 @@ export default function TweetEditorForm() {
     reset,
   } = useForm();
 
-  const { posts, setPosts, user,userId, setUser } = useContext(TweetContext);
-  
+  const { posts, setPosts, user,userId, setUser, url } = useContext(TweetContext);
   
   function onSubmit(data) {
+    console.log(posts.length, url);
     
     const newPost = {
       id: "0" + posts.length + 1,
@@ -40,12 +41,18 @@ export default function TweetEditorForm() {
       },
     };
     reset();
-    const datat = [newPost, ...posts];
-    setPosts(datat);  
+    // const datat = [newPost, ...posts];
+    // setPosts(datat);  
     
+    axios
+    .post(`${url}/tweets`, newPost)
+    .then((response) => {
+      console.log("New post added:", response.data);
+    })
+    .catch((error) => {
+      console.error("Error adding post:", error);
+    });
   }
-
-  
   return (
     <div className="tweet-editor-form">
       <form onSubmit={handleSubmit((data) => onSubmit(data))}>
