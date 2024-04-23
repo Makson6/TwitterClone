@@ -1,5 +1,8 @@
+import Profile from "../../assets/images/Profile-Photo.svg"
+
+
 export default function Avatar (){
      return <div className="avatar">
-         <img src="src/assets/Profile-Photo.svg" alt=""/>
+         <img src={Profile} alt=""/>
      </div>
 }

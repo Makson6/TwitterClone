@@ -26,7 +26,7 @@ export default function TweetAction (props){
        
         
         return (
-        <div className="tweet-action">
+        <div className="tweet-action" onClick={props.handleClick}>
               <img onClick={increm}  src={props.image} />
               <span onClick={increm} >{action}</span>
         </div>

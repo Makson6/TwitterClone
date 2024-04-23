@@ -34,7 +34,7 @@ export default function SideBar() {
 
 
 
-                <Link to="/home">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={Explore} alt="" />
                         <h1 className="page-title-sidebar">Explore</h1>
@@ -42,7 +42,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/home">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={Notifications} alt="" />
                         <h1 className="page-title-sidebar">Notifications</h1>
@@ -51,7 +51,7 @@ export default function SideBar() {
 
 
 
-                <Link to="/home">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={Message} alt="" />
                         <h1 className="page-title-sidebar">Messages</h1>
@@ -59,7 +59,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/home">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={Bookmarks} alt="" />
                         <h1 className="page-title-sidebar">Bookmarks</h1>
@@ -67,7 +67,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/home">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={Lists} alt="" />
                         <h1 className="page-title-sidebar">Lists</h1>
@@ -83,7 +83,7 @@ export default function SideBar() {
                 </Link>
 
 
-                <Link to="/home">
+                <Link to="/">
                     <div className="side-nav">
                         <img src={More} alt="" />
                         <h1 className="page-title-sidebar">More</h1>

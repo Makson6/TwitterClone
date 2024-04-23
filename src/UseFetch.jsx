@@ -1,6 +1,6 @@
  import axios from "axios";
 
- axios.get("http://localhost:3000/")
+ axios.get("https://my-api-serveur.onrender.com")
  
       .then((result) => {
           console.log(result.data);

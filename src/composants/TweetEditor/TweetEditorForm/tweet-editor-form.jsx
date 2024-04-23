@@ -44,6 +44,7 @@ export default function TweetEditorForm() {
     // setPosts(datat);  
     
     axios
+    
     .post(`${url}/tweets`, newPost)
     .then((response) => {
       console.log("New post added:", response.data);

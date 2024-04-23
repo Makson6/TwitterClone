@@ -15,7 +15,6 @@ const filteredData = posts.filter(item=>
   item.id > 5)
   //faire en sorte que xa affiche sur le navigateur  
 
-
   return(
     <div className="timeline">
         <div className="tweet-editor">
@@ -26,13 +25,11 @@ const filteredData = posts.filter(item=>
                <img className="avatar" src={userId.src}/>
       </div>
         </div>
-
         
         {filteredData?.map(el => ( 
             <Tweet  key={el.id } tableau={el}/>
         ))}
-        
-       
+               
       </div>
     )
   }
